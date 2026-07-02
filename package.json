@@ -1,0 +1,25 @@
+{
+  "name": "habit-tracker-app-api",
+  "version": "1.0.0",
+  "description": "Tech Crush Cohort 7 Backend Mini Project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Masterpiece34/habit-tracker-app-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Masterpiece34/habit-tracker-app-api/issues"
+  },
+  "homepage": "https://github.com/Masterpiece34/habit-tracker-app-api#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
