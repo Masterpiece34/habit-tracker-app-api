@@ -1,0 +1,26 @@
+[
+  {
+    "id": "a1b2c3d4-e5f6-4890-abcd-ef4434567890",
+    "name": "Drink Water",
+    "description": "Drink at least 8 glasses of water",
+    "frequency": "daily",
+    "createdAt": "2026-07-03T08:00:00.000Z",
+    "updatedAt": "2026-07-03T08:00:00.000Z"
+  },
+  {
+    "id": "a1b2c3d4-j5f6-4891-abcd-ef1234567111",
+    "name": "Meditate",
+    "description": "Read Your bible and pray everyday",
+    "frequency": "daily",
+    "createdAt": "2026-07-03T00:21:00.971Z",
+    "updatedAt": "2026-07-03T00:21:00.971Z"
+  },
+  {
+    "id": "a1b2c3d4-e5f6-4790-abcd-ef1234567890",
+    "name": "Meditate",
+    "description": "",
+    "frequency": "daily",
+    "createdAt": "2026-07-03T00:26:04.343Z",
+    "updatedAt": "2026-07-03T00:26:04.343Z"
+  }
+]
