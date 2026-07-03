@@ -10,3 +10,7 @@ function readHabitFile() {
   const raw = fs.readFileSync(DATA_FILE, "utf-8");
   return JSON.parse(raw);
 }
+
+function writeHabits(habits) {
+  fs.writeFileSync(DATA_FILE, JSON.stringify(habits, null, 2), "utf-8");
+}
