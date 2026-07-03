@@ -22,3 +22,23 @@ export function fectchAllHabit() {
 export function fetchHabitById(id) {
   return readHabitFile().find((habit) => habit.id === id);
 }
+
+export function createHabit({
+  name = "",
+  description = "",
+  frequency = "daily",
+}) {
+  const habits = readHabitFile();
+  const newHabit = {
+    id: crypto.randomUUID(),
+    name,
+    description,
+    frequency,
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString(),
+  };
+
+  habits.push(newHabit);
+  writeHabits(habits);
+  return newHabit;
+}
