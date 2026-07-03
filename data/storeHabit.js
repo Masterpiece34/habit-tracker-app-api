@@ -57,3 +57,13 @@ export function updateHabit(id, updateInfo) {
   writeHabits(habits);
   return habit;
 }
+
+export function deleteHabit(id) {
+  const habits = readHabitFile();
+  const index = habits.findIndex((habit) => habit.id === id);
+  if (index === -1) return false;
+
+  habits.splice(index, 1);
+  writeHabits(habits);
+  return true;
+}
