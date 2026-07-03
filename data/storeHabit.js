@@ -18,3 +18,7 @@ function writeHabits(habits) {
 export function fectchAllHabit() {
   return readHabits();
 }
+
+export function fetchHabitById(id) {
+  return readHabitFile().find((habit) => habit.id === id);
+}
