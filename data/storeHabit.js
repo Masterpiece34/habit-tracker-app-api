@@ -16,7 +16,7 @@ function writeHabits(habits) {
 }
 
 export function fectchAllHabit() {
-  return readHabits();
+  return readHabitFile();
 }
 
 export function fetchHabitById(id) {
