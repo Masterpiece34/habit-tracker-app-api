@@ -14,3 +14,7 @@ function readHabitFile() {
 function writeHabits(habits) {
   fs.writeFileSync(DATA_FILE, JSON.stringify(habits, null, 2), "utf-8");
 }
+
+export function fectchAllHabit() {
+  return readHabits();
+}
