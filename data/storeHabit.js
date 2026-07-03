@@ -43,12 +43,12 @@ export function createHabit({
   return newHabit;
 }
 
-export function updateHabit(id, userDataHabit) {
+export function updateHabit(id, updateInfo) {
   const habits = readHabitFile();
   const habit = habits.find((habit) => habit.id === id);
   if (!habit) return null;
 
-  const { name, description, frequency } = userDataHabit;
+  const { name, description, frequency } = updateInfo;
   if (name !== undefined) habit.name = name;
   if (description !== undefined) habit.description = description;
   if (frequency !== undefined) habit.frequency = frequency;
