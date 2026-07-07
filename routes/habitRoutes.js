@@ -12,10 +12,10 @@ deleteHabit
 } from '../services/habitService.js';
 const router = express.Router();
 /**
-•	GET /resources
+•	GET /habit
 •	Get all habits
 */
-router.get('/resources', async (req, res) => {
+router.get('/habit', async (req, res) => {
 try {
 const habits = await getAllHabits();
 res.status(200).json(habits);
@@ -27,10 +27,10 @@ error: error.message
 }
 });
 /**
-•	GET /resources/:id
+•	GET /habit/:id
 •	Get a single habit by ID
 */
-router.get('/resources/:id', async (req, res) => {
+router.get('/habit/:id', async (req, res) => {
 try {
 const id = Number(req.params.id);
 const habit = await getHabitById(id);
@@ -48,18 +48,13 @@ error: error.message
 }
 });
 /**
-•	POST /resources
+•	POST /habit
 •	Create a new habit
 */
-router.post('/resources', async (req, res) => {
+router.post('/habit', async (req, res) => {
 try {
 const { name } = req.body;
-// Basic validation
-// if (!name || name.trim() === '') {
-// return res.status(400).json({
-// message: 'Name is required'
-// });
-// }
+
 const newHabit = await createHabit({ name });
 res.status(201).json({
 message: 'Habit created successfully',
@@ -73,10 +68,10 @@ error: error.message
 }
 });
 /**
-•	PUT /resources/:id
+•	PUT /habit/:id
 •	Update an existing habit
 */
-router.put('/resources/:id', async (req, res) => {
+router.put('/habit/:id', async (req, res) => {
 try {
 const id = Number(req.params.id);
 const { name } = req.body;
@@ -103,10 +98,10 @@ error: error.message
 }
 });
 /**
-•	DELETE /resources/:id
+•	DELETE /habit/:id
 •	Delete a habit
 */
-router.delete('/resources/:id', async (req, res) => {
+router.delete('/habit/:id', async (req, res) => {
 try {
 const id = Number(req.params.id);
 const deleted = await deleteHabit(id);
