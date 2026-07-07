@@ -64,7 +64,7 @@ All endpoints return proper **HTTP status codes** and handle data in **JSON form
 *   **Response:** `200 OK`
     ```json
     [
-      { "id": 1, "name": "Drink Water" },
+      { "id": "a1b2c3d4-e5f6-4890-abcd-ef4434567890", "name": "Drink Water" },
       { "id": 2, "name": "Exercise" }
     ]
     ```
