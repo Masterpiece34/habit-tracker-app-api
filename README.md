@@ -7,10 +7,14 @@ This project is a **beginner-friendly backend REST API** designed to help users 
 
 ## Team Members and Roles
 As per the project guidelines, the following team members contributed to the repository:
-*   **Masterpiece34 (Emmanuel Imoh)**: Project setup and coordination.
-*   **EmmanuelAlliu (EMMANUEL ENERO ALLIU)**: Backend development and logic.
-*   **gavileway-dot**: Routes and implementation.
-*   **Edem Sokatsi**: Testing and README documentation.
+*   **Emmanuel Shigiri Imoh**: Repository setup, GitHub collaboration, testing of end points.
+*   **Alliu Emmanuel**: Data and Services Codebase
+*   **Dosumu Emmanuel**: GitHub collaboration, validation branch
+*   **Edem Sokatsi**:  README documentation.
+*   **Egba Henry Chukwuemeka**: GitHub collaboration validation branch
+*   **Animasaun Farouk**
+*   **Ernest James**: Route
+*   **Nobong Umoette**: Reviewed pull requests and merged branches
 
 
 
@@ -66,11 +70,11 @@ All endpoints return proper **HTTP status codes** and handle data in **JSON form
     ```
 
 ## Core Features and Requirements
-*   **Validation:** The API checks for required fields (e.g., name cannot be empty) and appropriate data types, returning a `400 Bad Request` for invalid input.
+*   **Validation:** The API checks for required fields (e.g., name cannot be empty) and appropriate data types, returning a `400 Bad Request` for invalid input(server-side error).
 *   **Data Persistence:** All habits are stored in a JSON file under the `data/` directory.
 *   **Timestamps:** Every habit includes `createdAt` and `updatedAt` fields.
 *   **Check-in & Streaks:** Users can mark habits as completed for the day. The bonus challenge includes **streak calculation** based on consecutive check-ins.
 
-## Known Issues and Limitations
-*   Data is stored in a flat JSON file; it is not suitable for high-concurrency production environments.
-*   No frontend interface is provided as this is a backend-focused project.
+## Things to know and limitations
+*   Data is stored in a JSON file. It is not suitable for high-concurrency production environments.
+*   We did not provide any frontend interface because this is a backend-focused project.
