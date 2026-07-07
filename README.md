@@ -49,11 +49,11 @@ All endpoints return proper **HTTP status codes** and handle data in **JSON form
 
 | Method | Endpoint | Description |
 | :--- | :--- | :--- |
-| **GET** | `/resources` | Retrieve a list of all habits. |
-| **GET** | `/resources/:id` | Retrieve a specific habit by its unique ID. |
-| **POST** | `/resources` | Create a new habit. |
-| **PUT** | `/resources/:id` | Update an existing habit. |
-| **DELETE** | `/resources/:id` | Remove a habit from the tracker. |
+| **GET** | `/habit` | Retrieve a list of all habits. |
+| **GET** | `/habit/:id` | Retrieve a specific habit by its unique ID. |
+| **POST** | `/habit` | Create a new habit. |
+| **PUT** | `/habit/:id` | Update an existing habit. |
+| **DELETE** | `/habit/:id` | Remove a habit from the tracker. |
 
 ### Example Request/Response
 **Create a Habit (POST /resources):**
