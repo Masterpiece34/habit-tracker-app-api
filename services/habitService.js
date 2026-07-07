@@ -2,6 +2,8 @@
 
 import * as storeHabit from "../data/storeHabit.js";
 
+// This Export will work for the call back side of routes
+
 export const getAllHabit = (req, res) => {
   res.status(200).json(storeHabit.fetchAllHabit());
 };
