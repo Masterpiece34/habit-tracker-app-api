@@ -56,16 +56,16 @@ All endpoints return proper **HTTP status codes** and handle data in **JSON form
 | **DELETE** | `/habit/:id` | Remove a habit from the tracker. |
 
 ### Example Request/Response
-**Create a Habit (POST /resources):**
+**Create a Habit (POST /habit):**
 *   **Request Body:** `{"name": "Read Bible"}`
 *   **Response:** `201 Created` - `{"id": 3, "name": "Read Bible", "createdAt": "2026-07-01"}`
 
-**Get All Habits (GET /resources):**
+**Get All Habits (GET /habit):**
 *   **Response:** `200 OK`
     ```json
     [
       { "id": "a1b2c3d4-e5f6-4890-abcd-ef4434567890", "name": "Drink Water" },
-      { "id": 2, "name": "Exercise" }
+      { "id":"a1b2c3d4-j5f6-4891-abcd-ef1234567111", "name": "Meditate" }
     ]
     ```
 
