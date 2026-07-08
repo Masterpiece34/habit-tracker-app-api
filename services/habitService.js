@@ -1,41 +1,35 @@
-// Business logic for habits
+// Business logic layer for habits
+// This separates our routing logic from our data access logic,
+// making the app easier to test and maintain!
 
 import * as storeHabit from "../data/storeHabit.js";
 
-// This Export will work for the call back side of routes
-
-export const getAllHabit = (req, res) => {
-  res.status(200).json(storeHabit.fetchAllHabit());
+// Fetch all habits from the data store
+export const getAllHabits = async () => {
+  return storeHabit.fetchAllHabits();
 };
 
-export const getHabitsById = (req, res) => {
-  if (!storeHabit.fetchHabitById) {
-    return res
-      .status(404)
-      .json({ success: false, errors: ["Habit not found"] });
-  }
-  res.status(200).json(storeHabit.fetchHabitById(req.params.id));
+// Fetch a single habit by its unique ID
+export const getHabitById = async (id) => {
+  return storeHabit.fetchHabitById(id);
 };
 
-export const create = (req, res) => {
-  res.status(201).json(storeHabit.createHabit(req.body));
+// Pass the new habit data down to the store to be saved
+export const createHabit = async (data) => {
+  return storeHabit.createHabit(data);
 };
 
-export const updateHabitById = (req, res) => {
-  if (!storeHabit.updateHabit) {
-    return res
-      .status(404)
-      .json({ success: false, errors: ["Habit not found"] });
-  }
-
-  res.json(storeHabit.updateHabit(req.params.id, req.body));
+// Update an existing habit with new info
+export const updateHabit = async (id, data) => {
+  return storeHabit.updateHabit(id, data);
 };
 
-export const removeById = (req, res) => {
-  if (!storeHabit.deleteHabit) {
-    return res
-      .status(404)
-      .json({ success: false, errors: ["Habit not found"] });
-  }
-  res.json(storeHabit.deleteHabit(req.params.id));
+// Remove a habit from the store entirely
+export const deleteHabit = async (id) => {
+  return storeHabit.deleteHabit(id);
+};
+
+// Check-in a habit for a specific date
+export const checkInHabit = async (id, date) => {
+  return storeHabit.checkInHabit(id, date);
 };
