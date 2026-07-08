@@ -1,0 +1,42 @@
+[
+  {
+    "id": "a1b2c3d4-e5f6-4890-abcd-ef4434567890",
+    "name": "Drink Water",
+    "description": "Drink at least 8 glasses of water",
+    "frequency": "daily",
+    "createdAt": "2026-07-03T08:00:00.000Z",
+    "updatedAt": "2026-07-08T11:30:58.853Z",
+    "checkIns": [
+      "2026-07-08",
+      "2026-07-09",
+      "2026-07-10",
+      "2026-07-11"
+    ],
+    "currentStreak": 5,
+    "longestStreak": 5
+  },
+  {
+    "id": "a1b2c3d4-j5f6-4891-abcd-ef1234567111",
+    "name": "Meditate",
+    "description": "Read Your bible and pray everyday",
+    "frequency": "daily",
+    "createdAt": "2026-07-03T00:21:00.971Z",
+    "updatedAt": "2026-07-03T00:21:00.971Z"
+  },
+  {
+    "id": "a1b2c3d4-e5f6-4790-abcd-ef1234567890",
+    "name": "Exercise",
+    "description": "Go for workout by 4am",
+    "frequency": "daily",
+    "createdAt": "2026-07-03T00:26:04.343Z",
+    "updatedAt": "2026-07-08T10:42:37.934Z"
+  },
+  {
+    "id": "8efa8ed7-32b8-4bf1-a6a3-af6c677d44f4",
+    "name": "Drink 2l of water",
+    "description": "Drinking water is important",
+    "frequency": "daily",
+    "createdAt": "2026-07-08T09:47:28.168Z",
+    "updatedAt": "2026-07-08T10:37:56.191Z"
+  }
+]
