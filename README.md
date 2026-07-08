@@ -10,14 +10,14 @@ This project is a **beginner-friendly backend REST API** designed to help users 
 
 As per the project guidelines, the following team members contributed to the repository:
 
-- **Emmanuel Shigiri Imoh**: Repository setup, GitHub collaboration, testing of end points.
-- **Alliu Emmanuel**: Data and Services Codebase
-- **Dosumu Emmanuel**: GitHub collaboration, validation branch
-- **Edem Sokatsi**: README documentation.
-- **Egba Henry Chukwuemeka**: GitHub collaboration validation branch
-- **Animasaun Farouk**
-- **Ernest James**: Route
-- **Nobong Umoette**: Reviewed pull requests and merged branches
+- **Emmanuel Shigiri Imoh (masterpiece34)**: Repository setup, GitHub collaboration, testing of end points.
+- **Alliu Emmanuel (EmmanuelAlliu)**: Data and Services Codebase
+- **Dosumu Emmanuel (Emmydos)**: GitHub collaboration, validation branch
+- **Edem Sokatsi (SokatsiEdem)**: README documentation.
+- **Egba Henry Chukwuemeka (evangelisthenryce-creator)**: GitHub collaboration validation branch
+- **Animasaun Farouk (animasaunfarouk0-prog)**
+- **Ernest James (gavileway-dot)**: Route
+- **ENobong Umoette (enodavidpro)**: Reviewed pull requests and merged branches
 
 ## Tech Stack
 
@@ -51,14 +51,14 @@ To get our project running locally, follow these steps:
 
 All endpoints return proper **HTTP status codes** and handle data in **JSON format**.
 
-| Method     | Endpoint               | Description                                 |
-| :--------- | :--------------------- | :------------------------------------------ |
-| **GET**    | `/api/habit`           | Retrieve a list of all habits.              |
-| **GET**    | `/api/habit/:id`       | Retrieve a specific habit by its unique ID. |
-| **POST**   | `/api/habit`           | Create a new habit.                         |
-| **PUT**    | `/api/habit/:id`       | Update an existing habit.                   |
-| **DELETE** | `/api/habit/:id`       | Remove a habit from the tracker.            |
-| **POST**   | `/api/habit/:id/checkin`| Check-in a habit for a date (updates streak).|
+| Method     | Endpoint                 | Description                                   |
+| :--------- | :----------------------- | :-------------------------------------------- |
+| **GET**    | `/api/habit`             | Retrieve a list of all habits.                |
+| **GET**    | `/api/habit/:id`         | Retrieve a specific habit by its unique ID.   |
+| **POST**   | `/api/habit`             | Create a new habit.                           |
+| **PUT**    | `/api/habit/:id`         | Update an existing habit.                     |
+| **DELETE** | `/api/habit/:id`         | Remove a habit from the tracker.              |
+| **POST**   | `/api/habit/:id/checkin` | Check-in a habit for a date (updates streak). |
 
 ### Example Request/Response
 
